@@ -1,0 +1,44 @@
+@import "../../styles/variables.scss";
+
+// .container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 100vh;
+//   .alignCenter {
+//     background-color: $primary-color;
+//     width: 50%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+//   gap: 12px;
+// }
+
+.container {
+  display: flex;
+  height: 100vh; // ✅ full screen
+}
+
+// /* Left side (form) */
+// .container > :first-child {
+//   width: 50%;
+// //   padding: 100px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+/* Right side (image) */
+.alignCenter {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-color;
+}
+
+.loginImage {
+  max-width: 100%;
+  height: auto;
+}

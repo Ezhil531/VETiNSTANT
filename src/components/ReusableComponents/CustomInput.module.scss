@@ -1,0 +1,58 @@
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 14px;
+  color: #333;
+
+  span {
+    color: red;
+  }
+}
+
+.inputBox {
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: #fff;
+
+  transition: all 0.3s ease;
+
+  &:focus-within {
+    border-color: #6c63ff;
+    box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.1);
+  }
+
+  input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 0 8px;
+    background: transparent;
+  }
+}
+
+.leftIcon {
+  width: 18px;
+  height: 18px;
+  opacity: 0.6;
+}
+
+.rightIcon {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

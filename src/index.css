@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Scrollbar (optional styling) */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 4px;
+}
+
+.scroll-container {
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  transition: padding-right 0.3s ease;
+  padding-right: 0; /* initial padding to hide scrollbar area */
+}
+
+.scroll-container::-webkit-scrollbar {
+  width: 8px;
+  transition: opacity 0.3s ease;
+  opacity: 0; /* hidden initially */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 4px;
+}
+
+.scroll-container.scrolling::-webkit-scrollbar {
+  opacity: 1; /* fade in on scroll */
+}
+
+.scroll-container.scrolling {
+  scrollbar-width: thin;
+  padding-right: 8px; /* push content to the left when scrollbar appears */
+}
